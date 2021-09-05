@@ -1,0 +1,38 @@
+body {
+  background-color: aliceblue;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+@media screen and (max-width: 100%) {
+    .column {
+      width: 100%;
+    }
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    padding: 10px;
+    height: 1000px;
+  }
+  .left {
+    width: 10%;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+  .right {
+    width: 90%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
